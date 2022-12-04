@@ -2,6 +2,10 @@
   font-family: "Alexandria", sans-serif;
   min-height: 100vh;
   background-color: #2D3142;
-  /* background-color: #BFC0C0; */
+}
+
+.Main {
+  padding-top: 110px;
+  color: #FB6107;
 }
 

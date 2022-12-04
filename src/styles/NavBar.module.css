@@ -1,5 +1,9 @@
 .NavBar {
-  background-color: #2D3142;
+  background-color: #2d3142;
+}
+
+.NavLink {
+  padding: 5px;
 }
 
 * {
@@ -7,12 +11,20 @@
 }
 
 i {
-  color: #BFC0C0;
+  color: #bfc0c0;
   font-size: 1.6rem;
   padding: 5px;
   vertical-align: middle;
 }
 
+.Active i {
+  color: #FB6107;
+}
+
 span {
-  color: #BFC0C0;
+  color: #bfc0c0;
+}
+
+a:hover {
+  text-decoration: none;
 }
