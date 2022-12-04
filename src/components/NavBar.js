@@ -1,13 +1,14 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import styles from "../styles/NavBar.module.css";
+import logo from "../assets/logo.png"
 
 const NavBar = () => {
   return (
     <Navbar className={styles.NavBar} expand="md" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">
-          <span>DevLocker</span>
+        <Navbar.Brand>
+          <img src={logo} alt="logo" height="90"/>
         </Navbar.Brand>
         <Navbar.Toggle
           class="custom-toggler"
