@@ -1,4 +1,38 @@
 .NavBar {
-  background-color: #1a2a6b;
-  border-bottom: 1px solid #a4a4a4;
+  background-color: #248232;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  transition: color ease-in-out 0.5s;
+}
+
+a:hover i {
+  color: white;
+  transition: color ease-in-out 0.5s;
+}
+
+i {
+  color: black;
+  font-size: 1.6rem;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+i:hover {
+  transition: color ease-in-out 0.5s;
+  color: white;
+}
+
+span {
+  color: black;
+}
+
+span:hover {
+  transition: color ease-in-out 0.5s;
+  color: black;
 }
