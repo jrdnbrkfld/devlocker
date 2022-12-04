@@ -1,19 +1,16 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import styles from "../styles/NavBar.module.css";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
 
 const NavBar = () => {
   return (
-    <Navbar className={styles.NavBar} expand="md" fixed="top">
+    <Navbar className={styles.NavBar} expand="md" fixed="top" variant="dark">
       <Container>
         <Navbar.Brand>
-          <img src={logo} alt="logo" height="90"/>
+          <img src={logo} alt="logo" height="90" />
         </Navbar.Brand>
-        <Navbar.Toggle
-          class="custom-toggler"
-          aria-controls="basic-navbar-nav"
-        />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">
             <Nav.Link>
