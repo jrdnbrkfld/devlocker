@@ -17,6 +17,18 @@
   color: #2d3142;
 }
 
+.Button:hover:active {
+  background-color: #fb6107 !important;
+}
+
+.Button:active {
+  background-color: #fb6107 !important;
+}
+
+.Button:focus {
+  background-color: #fb6107;
+}
+
 .Wide {
   padding: 10px 40px;
 }
