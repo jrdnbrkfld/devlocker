@@ -1,0 +1,22 @@
+.Button {
+  font-size: 0.8rem;
+  display: block;
+  border-radius: 100px;
+  border-color: transparent;
+  color: #2d3142;
+  background-color: #bfc0c0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Button:hover {
+  opacity: 0.8;
+  border-color: transparent;
+  cursor: pointer;
+  background-color: #fb6107;
+  color: #2d3142;
+}
+
+.Wide {
+  padding: 10px 40px;
+}

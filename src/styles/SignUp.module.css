@@ -1,0 +1,45 @@
+.Input {
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+.Header {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.Link {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.Link span {
+  color: #fb6107;
+}
+
+.Container {
+  padding: 30px 10px;
+}
+
+.SignInCol {
+  height: 320px;
+}
+
+.SignUpCol {
+  height: 375px;
+}
+
+a {
+   color: #fb6107;
+}
+
+a:hover {
+   color: white;
+}

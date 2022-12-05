@@ -1,11 +1,14 @@
 .App {
   font-family: "Alexandria", sans-serif;
   min-height: 100vh;
-  background-color: #2D3142;
+  background-color: #2d3142;
 }
 
 .Main {
-  padding-top: 110px;
-  color: #FB6107;
+  padding-top: 120px;
+  color: #fb6107;
 }
 
+.Content {
+  text-align: -webkit-center;
+}
