@@ -11,7 +11,7 @@ const SignUp = () => {
       <Container className={`${appStyles.Content} p-4 `}>
         <h1 className={styles.Header}>sign up</h1>
 
-        <Form>
+        <Form className="w-50">
           <Form.Group controlId="username">
             <Form.Label className="d-none">Username</Form.Label>
             <Form.Control
