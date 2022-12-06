@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Alert, Button, Col, Container, Form } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import styles from "../../styles/SignUp.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Buttons.module.css";
 import axios from "axios";
+import { SetCurrentUserContext } from "../../App";
 
 function SignIn() {
+  const setCurrentUser = useContext(SetCurrentUserContext);
+
   const [signInData, setSignInData] = useState({
     username: "",
     password: "",
@@ -27,7 +30,8 @@ function SignIn() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("/dj-rest-auth/login/", signInData);
+      const {data} = await axios.post("/dj-rest-auth/login/", signInData);
+      setCurrentUser(data.user)
       history.push("/");
     } catch (err) {
       setErrors(err.response?.data);
@@ -85,7 +89,6 @@ function SignIn() {
               {message}
             </Alert>
           ))}
-
         </Form>
       </Container>
       <Container className="mt-3">
