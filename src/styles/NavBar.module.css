@@ -3,7 +3,12 @@
 }
 
 .NavLink {
+  color: #bfc0c0;
   padding: 5px;
+}
+
+.NavLink:hover {
+  color: #fb6107;
 }
 
 * {
@@ -11,18 +16,17 @@
 }
 
 i {
-  color: #bfc0c0;
   font-size: 1.6rem;
   padding: 5px;
   vertical-align: middle;
 }
 
-.Active i {
-  color: #FB6107;
+i:hover {
+  color: #fb6107;
 }
 
-span {
-  color: #bfc0c0;
+.Active {
+  color: #fb6107;
 }
 
 a:hover {
