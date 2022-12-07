@@ -1,12 +1,17 @@
 .Button {
   font-size: 0.8rem;
-  display: block;
+  align-self: center;
   border-radius: 100px;
   border-color: transparent;
   color: #2d3142;
   background-color: #bfc0c0;
   text-transform: uppercase;
   font-weight: bold;
+  
+  padding: 4px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 75px;
 }
 
 .Button:hover {

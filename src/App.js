@@ -5,6 +5,7 @@ import SignIn from "./pages/auth/SignIn";
 import { Container } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 import "./api/axiosDefaults";
+import PostCreateForm from "./pages/posts/PostCreateForm";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" render={() => <h1>Home</h1>} />
           <Route exact path="/signin" render={() => <SignIn />} />
           <Route exact path="/signup" render={() => <SignUp />} />
+          <Route exact path="/posts/create" render={() => <PostCreateForm />} />
           <Route render={() => <h1>Page not found!</h1>} />
         </Switch>
       </Container>

@@ -1,0 +1,7 @@
+.Asset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 150px;
+  max-width: 150px;
+}
