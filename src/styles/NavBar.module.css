@@ -11,6 +11,10 @@
   color: #fb6107;
 }
 
+.Toggler {
+  display: contents;
+}
+
 * {
   box-sizing: border-box;
 }
