@@ -1,12 +1,12 @@
 .App {
   font-family: "Alexandria", sans-serif;
   min-height: 100vh;
-  background-color: #2d3142;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
 }
 
 .Main {
   padding-top: 120px;
-  color: #fb6107;
+  color: white;
 }
 
 .Content {

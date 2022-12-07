@@ -43,7 +43,7 @@ function PostCreateForm() {
 
   const textFields = (
     <div className="text-center">
-      <Form.Group>
+      <Form.Group className="mt-3">
         <Form.Label>Title</Form.Label>
         <Form.Control
           type="text"
@@ -64,10 +64,10 @@ function PostCreateForm() {
         />
       </Form.Group>
 
-      <Button className={btnStyles.Button} onClick={() => {}}>
+      <Button className={`${btnStyles.Button} mb-3`} onClick={() => {}}>
         cancel
       </Button>
-      <Button className={btnStyles.Button} type="submit">
+      <Button className={`${btnStyles.Button} mb-3`} type="submit">
         create
       </Button>
     </div>
@@ -97,7 +97,7 @@ function PostCreateForm() {
                 </>
               ) : (
                 <Form.Label
-                  className="d-flex justify-content-center"
+                  className="d-flex mt-4 justify-content-center"
                   htmlFor="image-upload"
                 >
                   <Asset src={Upload} message="Click to upload an image" />

@@ -1,37 +1,39 @@
 .Button {
   font-size: 0.8rem;
-  align-self: center;
-  border-radius: 100px;
   border-color: transparent;
-  color: #2d3142;
+  color: black;
   background-color: #bfc0c0;
   text-transform: uppercase;
   font-weight: bold;
-  
   padding: 4px 10px;
   margin-left: 10px;
   margin-right: 10px;
   min-width: 75px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .Button:hover {
   opacity: 0.8;
   border-color: transparent;
   cursor: pointer;
-  background-color: #fb6107;
-  color: #2d3142;
+  background-color: black;
+  color: white;
 }
 
 .Button:hover:active {
-  background-color: #fb6107 !important;
+  background-color: black !important;
 }
 
 .Button:active {
-  background-color: #fb6107 !important;
+  background-color: black !important;
 }
 
 .Button:focus {
-  background-color: #fb6107;
+  background-color: black;
 }
 
 .Wide {

@@ -1,14 +1,19 @@
 .NavBar {
-  background-color: #2d3142;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .NavLink {
-  color: #bfc0c0;
+  color: black;
   padding: 5px;
 }
 
 .NavLink:hover {
-  color: #fb6107;
+  color: white;
 }
 
 .Toggler {
@@ -26,11 +31,11 @@ i {
 }
 
 i:hover {
-  color: #fb6107;
+  color: white;
 }
 
 .Active {
-  color: #fb6107;
+  color: white;
 }
 
 a:hover {
