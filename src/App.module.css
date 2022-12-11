@@ -1,12 +1,26 @@
 .App {
   font-family: "Alexandria", sans-serif;
-  min-height: 100vh;
-  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  background: linear-gradient(-45deg, #ffffff, #c2c2c2 , #ebeaea);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .Main {
   padding-top: 120px;
-  color: white;
+  color: black;
+  height: 100vh;
 }
 
 .Content {
