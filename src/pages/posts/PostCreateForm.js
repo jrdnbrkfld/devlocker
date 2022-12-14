@@ -58,7 +58,7 @@ function PostCreateForm() {
       const { data } = await axiosReq.post("/posts/", formData);
       history.push(`/posts/${data.id}`);
     } catch (err) {
-      if (err.response?.status) {
+      if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }
       console.log(err);
@@ -147,6 +147,12 @@ function PostCreateForm() {
                 ref={imageInput}
               />
             </Form.Group>
+            {errors.image?.map((message, idx) => (
+              <Alert variant="danger" key={idx}>
+                {message}
+              </Alert>
+            ))}
+
             <div className="d-md-none">{textFields}</div>
           </Container>
         </Col>
