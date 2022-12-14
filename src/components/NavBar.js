@@ -110,7 +110,7 @@ const NavBar = () => {
     >
       <Container>
         <NavLink to="/">
-          <Navbar.Brand >
+          <Navbar.Brand>
             <img className={styles.Logo} src={logo} alt="logo" height="90" />
           </Navbar.Brand>
         </NavLink>
@@ -127,9 +127,8 @@ const NavBar = () => {
               className={`${styles.NavLink} ${styles.Toggler}`}
               activeClassName={styles.Active}
               to="/"
-            >
-              {currentUser ? loggedInIcons : loggedOutIcons}
-            </NavLink>
+            ></NavLink>
+            {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>
       </Container>
