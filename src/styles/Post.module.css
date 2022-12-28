@@ -1,0 +1,27 @@
+.Post {
+  min-height: 350px;
+  /* From https://css.glass */
+  background: rgba(203, 45, 62, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(203, 45, 62, 0.1);
+}
+
+.Post figure,
+h5 {
+  margin: 0 0;
+}
+
+.Heart {
+  color: #3c4e5a;
+}
+
+.Heart:hover {
+  color: white;
+}
+
+.HeartOutline:hover {
+  color: #3c4e5a;
+}
