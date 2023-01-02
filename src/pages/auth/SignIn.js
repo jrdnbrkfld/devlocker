@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Alert, Button, Col, Container, Form } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import styles from "../../styles/SignUp.module.css";
-import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Buttons.module.css";
 import axios from "axios";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
@@ -30,8 +29,8 @@ function SignIn() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const {data} = await axios.post("/dj-rest-auth/login/", signInData);
-      setCurrentUser(data.user)
+      const { data } = await axios.post("/dj-rest-auth/login/", signInData);
+      setCurrentUser(data.user);
       history.push("/");
     } catch (err) {
       setErrors(err.response?.data);
@@ -41,7 +40,7 @@ function SignIn() {
 
   return (
     <Col className="my-auto p-0 p-md-2">
-      <Container className={`${appStyles.Content} p-4 `}>
+      <Container className={`${styles.Container} p-4 `}>
         <h1 className={styles.Header}>sign in</h1>
         <Form className="w-50" onSubmit={handleSubmit}>
           <Form.Group controlId="username">
