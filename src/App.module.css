@@ -1,20 +1,21 @@
 .App {
   font-family: "Alexandria", sans-serif;
-  background: linear-gradient(-45deg, #ffffff, #c2c2c2 , #ebeaea);
+  background: linear-gradient(-45deg, #ffffff, #c2c2c2, #ebeaea);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
+  background: fixed;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .Main {
