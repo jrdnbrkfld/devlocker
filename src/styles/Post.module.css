@@ -7,6 +7,7 @@
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
   border: 1px solid rgba(203, 45, 62, 0.1);
+  margin-bottom: 10px;
 }
 
 .Post figure,
