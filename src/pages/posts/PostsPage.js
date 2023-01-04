@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 
 import appStyles from "../../App.module.css";
 import styles from "../../styles/SignUp.module.css";
+import postStyles from "../../styles/PostsPage.module.css";
 
 import { useLocation } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
@@ -38,6 +39,18 @@ function PostsPage({ message, filter = "" }) {
     <Row className="h-auto">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <p>Popular profiles mobile</p>
+        <i className={`fas fa-search ${postStyles.SearchIcon}`} />
+        <Form
+          className={postStyles.SearchBar}
+          onSubmit={(event) => event.preventDefault()}
+        >
+          <Form.Control
+            type="text"
+            className="mr-sm-2"
+            placeholder="Search posts"
+          />
+        </Form>
+
         {hasLoaded ? (
           <>
             {posts.results.length ? (
