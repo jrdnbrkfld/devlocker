@@ -23,7 +23,7 @@
   box-shadow: -4px -4px 8px #cacaca, 4px 4px 8px #f6f6f6;
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
-  border: 1px solid rgba(203, 45, 62, 0.1);
+  border: 1px solid rgb(211 216 222);
 }
 
 .Button:hover:active {
@@ -34,7 +34,7 @@
   box-shadow: -4px -4px 8px #cacaca, 4px 4px 8px #f6f6f6;
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
-  border: 1px solid rgba(203, 45, 62, 0.1);
+  border: 1px solid rgb(211 216 222);
 }
 
 .Button:active {
