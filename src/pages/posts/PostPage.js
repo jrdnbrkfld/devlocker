@@ -58,7 +58,12 @@ function PostPage() {
           <Container className={`${appStyles.Content} ${styles.Form}`}>
             {comments.results.length ? (
               comments.results.map((comment) => (
-                <Comment key={comment.id} {...comment} />
+                <Comment
+                  key={comment.id}
+                  {...comment}
+                  setPost={setPost}
+                  setComments={setComments}
+                />
               ))
             ) : currentUser ? (
               <span>No comments yet, be the first!</span>
