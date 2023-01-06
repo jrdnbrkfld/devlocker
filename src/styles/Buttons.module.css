@@ -1,6 +1,6 @@
 .Button {
   font-size: 0.8rem;
-  border-color: transparent;
+  border-color: #d3d8de;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
@@ -13,6 +13,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
+  cursor: pointer;
 }
 
 .Button:hover {
