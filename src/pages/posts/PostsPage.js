@@ -65,6 +65,7 @@ function PostsPage({ message, filter = "" }) {
           <>
             {posts.results.length ? (
               <InfiniteScroll
+                style={{ overflow: 'inherit' }}
                 children={posts.results.map((post) => (
                   <Post ket={post.id} {...post} setPosts={setPosts} />
                 ))}
