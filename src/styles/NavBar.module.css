@@ -29,7 +29,7 @@ i {
 }
 
 .Active {
-  color: #3c4e5a;
+  font-weight: bolder;
 }
 
 a:hover {
