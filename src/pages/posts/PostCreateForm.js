@@ -134,7 +134,7 @@ function PostCreateForm() {
                 </>
               ) : (
                 <Form.Label
-                  className="d-flex mt-4 justify-content-center"
+                  className="mt-4 justify-content-center"
                   htmlFor="image-upload"
                 >
                   <Asset src={Upload} message="Click to upload an image" />
