@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 
 import styles from "../../styles/SignUp.module.css";
 import postStyles from "../../styles/PostsPage.module.css";
+import assetStyles from "../../styles/Asset.module.css"
 
 import { useLocation } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
@@ -16,6 +17,7 @@ import NoResults from "../../assets/no-results.png";
 import Asset from "../../components/Asset";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
+import PopularProfiles from "../profiles/PopularProfiles";
 
 function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
@@ -65,7 +67,7 @@ function PostsPage({ message, filter = "" }) {
           <>
             {posts.results.length ? (
               <InfiniteScroll
-                style={{ overflow: 'inherit' }}
+                style={{ overflow: "inherit" }}
                 children={posts.results.map((post) => (
                   <Post ket={post.id} {...post} setPosts={setPosts} />
                 ))}
@@ -82,12 +84,12 @@ function PostsPage({ message, filter = "" }) {
           </>
         ) : (
           <Container className={styles.Container}>
-            <Asset spinner />
+            <Asset className={assetStyles.Asset} spinner />
           </Container>
         )}
       </Col>
       <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
-        <p>Popular profiles for desktop</p>
+        <PopularProfiles />
       </Col>
     </Row>
   );
