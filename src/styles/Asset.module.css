@@ -1,6 +1,8 @@
 .Asset {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 150px;
+  display: contents;
+}
+
+.Image {
+  max-height: 120px;
+  max-width: 120px;
 }
