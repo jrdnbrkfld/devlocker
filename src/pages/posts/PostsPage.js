@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 
 import styles from "../../styles/SignUp.module.css";
 import postStyles from "../../styles/PostsPage.module.css";
-import assetStyles from "../../styles/Asset.module.css"
+import assetStyles from "../../styles/Asset.module.css";
 
 import { useLocation } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
@@ -48,7 +48,7 @@ function PostsPage({ message, filter = "" }) {
   return (
     <Row className="h-auto">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Popular profiles mobile</p>
+        <PopularProfiles mobile />
         <i className={`fas fa-search ${postStyles.SearchIcon}`} />
         <Form
           className={postStyles.SearchBar}
