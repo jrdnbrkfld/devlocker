@@ -132,7 +132,9 @@ function ProfilePage() {
               {mainProfilePosts}
             </>
           ) : (
-            <Asset spinner />
+            <div className="d-flex justify-content-around">
+              <Asset spinner />
+            </div>
           )}
         </Container>
       </Col>
