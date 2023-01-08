@@ -104,6 +104,7 @@ function ProfilePage() {
       <p className="text-center">{profile?.owner}'s posts</p>
       {profilePosts.results.length ? (
         <InfiniteScroll
+          style={{ overflow: "inherit" }}
           children={profilePosts.results.map((post) => (
             <Post key={post.id} {...post} setPosts={setProfilePosts} />
           ))}
