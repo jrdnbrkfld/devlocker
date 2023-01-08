@@ -31,7 +31,9 @@ const PopularProfiles = ({ mobile }) => {
           )}
         </>
       ) : (
-        <Asset className={assetStyles.Asset} spinner />
+        <div className="d-flex justify-content-around">
+          <Asset spinner />
+        </div>
       )}
     </Container>
   );
