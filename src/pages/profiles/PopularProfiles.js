@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 import appStyles from "../../styles/PopularProfiles.module.css";
-import assetStyles from "../../styles/Asset.module.css";
 
 import Asset from "../../components/Asset";
 import Profile from "./Profile";
