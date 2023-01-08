@@ -1,6 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+
 import appStyles from "../../styles/PopularProfiles.module.css";
+import assetStyles from "../../styles/Asset.module.css";
+
 import Asset from "../../components/Asset";
 import Profile from "./Profile";
 import { useProfileData } from "../../contexts/ProfileDataContext";
@@ -28,7 +31,7 @@ const PopularProfiles = ({ mobile }) => {
           )}
         </>
       ) : (
-        <Asset spinner />
+        <Asset className={assetStyles.Asset} spinner />
       )}
     </Container>
   );
