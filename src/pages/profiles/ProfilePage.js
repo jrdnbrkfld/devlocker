@@ -113,10 +113,12 @@ function ProfilePage() {
           next={() => fetchMoreData(profilePosts, setProfilePosts)}
         />
       ) : (
-        <Asset
-          src={NoResults}
-          message={`No results found, ${profile?.owner} hasn't posted yet.`}
-        />
+        <div className={styles.NoResults}>
+          <Asset
+            src={NoResults}
+            message={`No results found, ${profile?.owner} hasn't posted yet.`}
+          />
+        </div>
       )}
     </>
   );
