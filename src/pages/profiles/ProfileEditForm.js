@@ -16,7 +16,8 @@ import {
 } from "../../contexts/CurrentUserContext";
 
 import btnStyles from "../../styles/Buttons.module.css";
-import appStyles from "../../App.module.css";
+import appStyles from "../../styles/ProfileEdit.module.css";
+import styles from "../../styles/ProfilePhoto.module.css";
 
 const ProfileEditForm = () => {
   const currentUser = useCurrentUser();
@@ -115,13 +116,13 @@ const ProfileEditForm = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Row>
+      <Row className={appStyles.Container}>
         <Col className="py-2 p-0 p-md-2 text-center" md={7} lg={6}>
-          <Container className={appStyles.Content}>
+          <Container>
             <Form.Group>
               {image && (
                 <figure>
-                  <Image src={image} fluid />
+                  <Image src={image} fluid className={styles.ProfilePhoto} />
                 </figure>
               )}
               {errors?.image?.map((message, idx) => (
