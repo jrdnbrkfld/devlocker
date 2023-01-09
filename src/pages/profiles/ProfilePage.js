@@ -11,7 +11,7 @@ import btnStyles from "../../styles/Buttons.module.css";
 
 import PopularProfiles from "./PopularProfiles";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import {
   useProfileData,
@@ -85,18 +85,20 @@ function ProfilePage() {
           </Row>
         </Col>
         <Col lg={3} className="text-lg-right">
-          {currentUser && !is_owner && profile?.following_id ? (
-            <Button className={`${btnStyles.Button}`} onClick={() => {}}>
-              unfollow
-            </Button>
-          ) : (
-            <Button
-              className={`${btnStyles.Button}`}
-              onClick={() => handleFollow(profile)}
-            >
-              follow
-            </Button>
-          )}
+          {currentUser &&
+            !is_owner &&
+            (profile?.following_id ? (
+              <Button className={`${btnStyles.Button}`} onClick={() => {}}>
+                unfollow
+              </Button>
+            ) : (
+              <Button
+                className={`${btnStyles.Button}`}
+                onClick={() => handleFollow(profile)}
+              >
+                follow
+              </Button>
+            ))}
         </Col>
         {profile?.content && <Col className="p-3">{profile.content}</Col>}
       </Row>
