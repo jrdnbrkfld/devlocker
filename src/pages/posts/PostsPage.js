@@ -7,7 +7,6 @@ import Container from "react-bootstrap/Container";
 
 import styles from "../../styles/SignUp.module.css";
 import postStyles from "../../styles/PostsPage.module.css";
-import assetStyles from "../../styles/Asset.module.css";
 
 import { useLocation } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
