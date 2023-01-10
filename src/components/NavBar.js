@@ -75,7 +75,7 @@ const NavBar = () => {
       >
         <ProfilePhoto
           src={currentUser?.profile_image}
-          text="Profile"
+          text={currentUser?.username}
           height={40}
         />
       </NavLink>
