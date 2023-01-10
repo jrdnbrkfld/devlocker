@@ -20,8 +20,9 @@ function PostEditForm() {
     title: "",
     content: "",
     image: "",
+    category: "",
   });
-  const { title, content, image } = postData;
+  const { title, content, image, category } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -31,9 +32,11 @@ function PostEditForm() {
     const handleMount = async () => {
       try {
         const { data } = await axiosReq.get(`/posts/${id}/`);
-        const { title, content, image, is_owner } = data;
+        const { title, content, image, is_owner, category } = data;
 
-        is_owner ? setPostData({ title, content, image }) : history.push("/");
+        is_owner
+          ? setPostData({ title, content, image, category })
+          : history.push("/");
       } catch (err) {
         // console.log(err);
       }
@@ -65,6 +68,7 @@ function PostEditForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("category", category);
 
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
@@ -97,6 +101,30 @@ function PostEditForm() {
           {message}
         </Alert>
       ))}
+
+      <Form.Group>
+        <Form.Label>Category</Form.Label>
+        {errors.category?.map((message, idx) => (
+          <Alert variant="warning" className={appStyles.Alert} key={idx}>
+            {message}
+          </Alert>
+        ))}
+
+        <Form.Control
+          as="select"
+          name="category"
+          className={appStyles.Input}
+          value={category}
+          onChange={handleChange}
+          aria-label="category"
+        >
+          <option>Select a category</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="React">React</option>
+        </Form.Control>
+      </Form.Group>
 
       <Form.Group>
         <Form.Label>Content</Form.Label>
