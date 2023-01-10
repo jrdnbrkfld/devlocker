@@ -38,7 +38,7 @@ function SignIn() {
       history.goBack();
     } catch (err) {
       setErrors(err.response?.data);
-      console.log(err);
+      // console.log(err);
     }
   };
 
