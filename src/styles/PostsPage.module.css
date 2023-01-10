@@ -16,3 +16,21 @@
   cursor: default;
   color: #cfced3;
 }
+
+.Badge {
+  font-size: 1rem;
+  margin: 0 0 10px 10px;
+}
+
+.Badge:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+/* Reduce the font size of badges on smaller screens */
+@media all and (max-width: 991px) {
+  .Badge {
+    font-size: 0.9rem;
+  }
+}

@@ -20,6 +20,7 @@ import Asset from "../../components/Asset";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
+import { Badge } from "react-bootstrap";
 
 function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
@@ -27,11 +28,16 @@ function PostsPage({ message, filter = "" }) {
   const { pathname } = useLocation();
   const currentUser = useCurrentUser();
   const [query, setQuery] = useState("");
+  const [category, setCategory] = useState(null);
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
+        const { data } = await axiosReq.get(
+          `/posts/?${filter}search=${query}${
+            category !== null ? `&category=${category}` : ""
+          }`
+        );
         setPosts(data);
         setHasLoaded(true);
       } catch (err) {
@@ -45,17 +51,58 @@ function PostsPage({ message, filter = "" }) {
     return () => {
       clearTimeout(timer);
     };
-  }, [filter, query, pathname, currentUser]);
+  }, [filter, query, pathname, category, currentUser]);
 
   return (
     <Row className="h-auto m-1">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
-        <i className={`fas fa-search ${postStyles.SearchIcon}`} />
+        <Badge
+          variant="dark"
+          pill
+          className={`${postStyles.Badge}`}
+          onClick={() => setCategory(null)}
+        >
+          All
+        </Badge>
+        <Badge
+          variant="dark"
+          pill
+          className={`${postStyles.Badge}`}
+          onClick={() => setCategory("HTML")}
+        >
+          HTML
+        </Badge>
+        <Badge
+          variant="dark"
+          pill
+          className={`${postStyles.Badge}`}
+          onClick={() => setCategory("CSS")}
+        >
+          CSS
+        </Badge>
+        <Badge
+          variant="dark"
+          pill
+          className={`${postStyles.Badge}`}
+          onClick={() => setCategory("JavaScript")}
+        >
+          JavaScript
+        </Badge>
+        <Badge
+          variant="dark"
+          pill
+          className={`${postStyles.Badge}`}
+          onClick={() => setCategory("React")}
+        >
+          React
+        </Badge>
         <Form
           className={postStyles.SearchBar}
           onSubmit={(event) => event.preventDefault()}
         >
+          <i className={`fas fa-search ${postStyles.SearchIcon}`} />
+
           <Form.Control
             value={query}
             onChange={(event) => setQuery(event.target.value)}
