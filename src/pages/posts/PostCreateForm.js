@@ -107,7 +107,6 @@ function PostCreateForm() {
           <option value="CSS">CSS</option>
           <option value="JavaScript">JavaScript</option>
           <option value="React">React</option>
-          <option value="null">None</option>
         </Form.Control>
       </Form.Group>
 
