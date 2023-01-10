@@ -132,9 +132,9 @@ function PostsPage({ message, filter = "" }) {
             )}
           </>
         ) : (
-          <Container className={styles.Container}>
-            <Asset className={assetStyles.Asset} spinner />
-          </Container>
+          <div className="d-flex justify-content-around">
+            <Asset spinner />
+          </div>
         )}
       </Col>
       <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
