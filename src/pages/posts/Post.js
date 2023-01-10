@@ -1,11 +1,12 @@
 import React from "react";
-import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Badge, Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import ProfilePhoto from "../../components/ProfilePhoto";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import styles from "../../styles/Post.module.css";
+import postStyles from "../../styles/PostsPage.module.css";
 
 const Post = (props) => {
   const {
@@ -19,6 +20,7 @@ const Post = (props) => {
     title,
     content,
     image,
+    category,
     updated_at,
     postPage,
     setPosts,
@@ -98,6 +100,11 @@ const Post = (props) => {
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
         {content && <Card.Text className="text-center">{content}</Card.Text>}
+        <Card.Text className="text-center">
+          <Badge variant="dark" className={postStyles.Badge}>
+            {category}
+          </Badge>
+        </Card.Text>
         <div className={`text-center ${styles.PostBar}`}>
           {is_owner ? (
             <OverlayTrigger
