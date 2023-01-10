@@ -59,7 +59,7 @@ function PostsPage({ message, filter = "" }) {
         <Badge
           variant="dark"
           pill
-          className={`${postStyles.Badge}`}
+          className={postStyles.Badge}
           onClick={() => setCategory(null)}
         >
           All
@@ -67,7 +67,7 @@ function PostsPage({ message, filter = "" }) {
         <Badge
           variant="dark"
           pill
-          className={`${postStyles.Badge}`}
+          className={postStyles.Badge}
           onClick={() => setCategory("HTML")}
         >
           HTML
@@ -75,7 +75,7 @@ function PostsPage({ message, filter = "" }) {
         <Badge
           variant="dark"
           pill
-          className={`${postStyles.Badge}`}
+          className={postStyles.Badge}
           onClick={() => setCategory("CSS")}
         >
           CSS
@@ -83,7 +83,7 @@ function PostsPage({ message, filter = "" }) {
         <Badge
           variant="dark"
           pill
-          className={`${postStyles.Badge}`}
+          className={postStyles.Badge}
           onClick={() => setCategory("JavaScript")}
         >
           JavaScript
@@ -91,7 +91,7 @@ function PostsPage({ message, filter = "" }) {
         <Badge
           variant="dark"
           pill
-          className={`${postStyles.Badge}`}
+          className={postStyles.Badge}
           onClick={() => setCategory("React")}
         >
           React
