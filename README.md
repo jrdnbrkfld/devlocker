@@ -24,3 +24,8 @@ This website was created to complete the fifth Milestone Project for Code Insitu
 Users of this website are able to create, read, update and delete posts regarding certain categories in the web development industry.
 
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
+
+## User Stories
+
+All of the user stories are shown below. If you would like to inspect them further, please click [this](https://github.com/users/jrdnbrkfld/projects/8/views/1?layout=table).
+![User Stories](docs/readme/user-stories.png)
