@@ -280,7 +280,12 @@ A list of ideas that I would like to implement in the future are as follow:
 
 # Technologies
 
-## Languages
+## Languages used
+
+- HTML
+- CSS
+- JavaScript
+- React.js
 
 ## Libraries, frameworks and dependencies
 
