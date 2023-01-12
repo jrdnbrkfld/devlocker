@@ -102,23 +102,67 @@ Toggled view:
 
 </details>
 <details><summary>Sign up</summary>
-If the visitor likes the website, they are able to register an account. This enables the user to be able to create posts, like posts and comment on posts.</details>
+If the visitor likes the website, they are able to register an account. This enables the user to be able to create posts, like posts and comment on posts. Once registered, the user is redirected to the sign in page.
+
+This targets the following user story:
+
+- [As a user I can create a new account so that I can access all the features for signed up users](https://github.com/jrdnbrkfld/devlocker/issues/3)
+
+![Sign up](docs/readme/signup.png)
+
+This page also handles any errors like blank fields or password not matching.
+
+![Sign up error](docs/readme/signup-error.png)
+
+</details>
 <details><summary>Sign in</summary>
-When the user returns to the website, or come here after they have signed up they are able to log back in with no problems.</details>
+When the user returns to the website, or come here after they have signed up they are able to log in. Both fields are mandatory and the correct error handling is in effect.
+
+This targets the following user story:
+
+- [As a user I can sign in to the app so that I can access functionality for logged in users](https://github.com/jrdnbrkfld/devlocker/issues/4)
+
+![Sign in](docs/readme/signin.png)
+
+</details>
 <details><summary>Popular profiles</summary>
-While viewing the website users are able to view other accounts that are popular, enabling them to decide if they would like to follow for more content.</details>
+While viewing the website users are able to view other accounts that are popular, enabling them to decide if they would like to follow for more content. It contains follow buttons next to each user, with the ability to also unfollow.
+
+![Popular profiles](docs/readme/popular-desktop.png)
+
+![Popular profiles mobile](docs/readme/popular-mobile.png)
+
+</details>
 <details><summary>Search</summary>
-Users are able to search via keywords or by username to give them the ability to specifically view posts related to their interests.</details>
+Users are able to search via keywords or by username to give them the ability to specifically view posts related to their interests.
+
+![Popular profiles](docs/readme/search.png)
+
+</details>
 <details><summary>Categories</summary>
-Users are able to filter posts by their category that was chosen when the post was created.</details>
-<details><summary>Feed</summary>
-When the user visits this page they will be greeted with posts from the accounts that they have followed, tailoring their experience.</details>
-<details><summary>Liked</summary>
-When the user visits this page they can view the posts that they have liked, enabling them to keep posts that they enjoy or would find useful</details>
+Users are able to filter posts by their category that was chosen when the post was created. This enables the user to find the content that they are most interested in.
+
+![Categories](docs/readme/categories.png)
+
+</details>
 <details><summary>Create, edit and delete posts</summary>
-Users are able to create their own posts including an image, title, content and category. If changes need to be made they also have the ability to edit all fields for the post. Deletion is also enabled.</details>
+Users are able to create their own posts including an image, title, content and category. If changes need to be made they also have the ability to edit all fields for the post. Deletion is also enabled.
+
+This targets the following user stories:
+
+- [As a logged in user I can create posts so that I can share my images with the world](https://github.com/jrdnbrkfld/devlocker/issues/9)
+
+![Create post](docs/readme/create-post.png)
+![Update or delete post](docs/readme/create-update-delete.png)
+
+</details>
 <details><summary>Create, edit and delete comments</summary>
-Users are able to create their own comments on posts. If changes need to be made they also have the ability to edit the comment, or delete it.</details>
+Users are able to create their own comments on posts. If changes need to be made they also have the ability to edit the comment, or delete it.
+
+![Create comment](docs/readme/comment.png)
+![Update or delete comment](docs/readme/comment-update-delete.png)
+
+</details>
 <details><summary>Profile</summary>
 When users visit this section they can view their personal statistics:
 
@@ -127,13 +171,21 @@ When users visit this section they can view their personal statistics:
 - How many people they follow
 - A small bio section where users can enter a quick description of themselves.
 
+This targets the following user story:
+
+- [As a user I can view user's avatars so that I can easily identify users of the application](https://github.com/jrdnbrkfld/devlocker/issues/8)
+
+![Profile](docs/readme/profile.png)
+
 Clicking the 3 dots creates a dropdown menu with the options to:
 
 - Edit profile
 - Change username
-- Change password</details>
-<details><summary>Sign out</summary>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus ligula ut euismod pellentesque. Nulla arcu lorem, congue id mollis luctus, accumsan eu tellus. Quisque lacinia condimentum ipsum, a sollicitudin eros molestie ut. In metus ante, eleifend tempus orci sit amet, viverra euismod ante.</details>
+- Change password
+
+![Profile edit](docs/readme/profile-edit.png)
+
+</details>
 
 ## Future Features
 
