@@ -46,11 +46,19 @@ All of the user stories are shown below. If you would like to inspect them furth
 
 <details><summary>Colours</summary>
 
+I decided to keep the colour scheme of the website simple and clean. The background, text and foreground colors have a sufficient contrast ratio to aid with accessibility.
+
 ![Colours](docs/readme/colours.png)
 
 </details>
 
-<details><summary>Fonts</summary></details>
+<details><summary>Fonts</summary>
+
+I used the [Alexandria](https://fonts.google.com/specimen/Alexandria?query=alexandria) for the entire website.
+
+![Fonts](docs/readme/font.png)
+
+</details>
 
 <details><summary>Wireframes</summary></details>
 
