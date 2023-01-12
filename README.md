@@ -271,6 +271,13 @@ This targets the following user stories:
 
 ## Future Features
 
+A list of ideas that I would like to implement in the future are as follow:
+
+- Posting videos instead of images
+- Show most liked posts, similiar to the popular profiles section
+- Ability to reply to comments
+- Option to like/unlike comments
+
 # Technologies
 
 ## Languages
