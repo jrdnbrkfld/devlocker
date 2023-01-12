@@ -25,6 +25,7 @@ This website was created to complete the fifth Milestone Project for Code Insitu
 Users of this website are able to:
 
 - Create, update and delete their own posts
+- Create, update and delete their own comments
 - Follow and unfollow other users
 - Like and unlike posts
 - Search for posts via keywords or username
