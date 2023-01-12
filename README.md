@@ -66,7 +66,13 @@ I used the [Alexandria](https://fonts.google.com/specimen/Alexandria?query=alexa
 
 <details><summary>Home</summary>
 
-The first thing users are greeted to is the Home Page. This is where you will find everything to navigate the website and decide wether or not you would like to take part and create an account.
+The first thing users are greeted to is the Home Page. This is where you will find everything to navigate the website and decide wether or not you would like to take part and create an account. All of the posts are clickable so the user can inspect them further.
+
+This targets the following user stories:
+
+- [As a user I can view the details of a single post so that I can learn more about it](https://github.com/jrdnbrkfld/devlocker/issues/10)
+- [As a user I can view all the most recent posts, ordered by most recently created first so that I am up to date with the newest content](https://github.com/jrdnbrkfld/devlocker/issues/12)
+- [As a user I can view the posts page so that I can read the comments about the post](https://github.com/jrdnbrkfld/devlocker/issues/17)
 
 Desktop view:
 
@@ -85,8 +91,9 @@ This targets the following user stories:
 
 - [As a user I can view a navbar from every page so that I can navigate easily between pages](https://github.com/jrdnbrkfld/devlocker/issues/1)
 - [As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh](https://github.com/jrdnbrkfld/devlocker/issues/2)
-- [Authentication - Logged in Status: As a user I can tell if I am logged in or not so that I can log in if I need to](https://github.com/jrdnbrkfld/devlocker/issues/5)
-- [Conditional rendering - As a logged out user I can see sign in and sign up options so that I can sign in/sign up](https://github.com/jrdnbrkfld/devlocker/issues/7)
+- [As a user I can tell if I am logged in or not so that I can log in if I need to](https://github.com/jrdnbrkfld/devlocker/issues/5)
+- [As a logged out user I can see sign in and sign up options so that I can sign in/sign up](https://github.com/jrdnbrkfld/devlocker/issues/7)
+- [As a user I can maintain my logged-in status until I choose to log out so that my user experience is not compromised](https://github.com/jrdnbrkfld/devlocker/issues/6)
 
 Desktop view:
 
@@ -128,6 +135,10 @@ This targets the following user story:
 <details><summary>Popular profiles</summary>
 While viewing the website users are able to view other accounts that are popular, enabling them to decide if they would like to follow for more content. It contains follow buttons next to each user, with the ability to also unfollow.
 
+This targets the following user story:
+
+- [As a user I can see a list of the most followed profiles so that I can see which profiles are popular](https://github.com/jrdnbrkfld/devlocker/issues/25)
+
 ![Popular profiles](docs/readme/popular-desktop.png)
 
 ![Popular profiles mobile](docs/readme/popular-mobile.png)
@@ -136,33 +147,95 @@ While viewing the website users are able to view other accounts that are popular
 <details><summary>Search</summary>
 Users are able to search via keywords or by username to give them the ability to specifically view posts related to their interests.
 
-![Popular profiles](docs/readme/search.png)
+This targets the following user story:
+
+- [As a user, I can search for posts with keywords, so that I can find the posts and user profiles I am most interested in.](https://github.com/jrdnbrkfld/devlocker/issues/13)
+
+![Search](docs/readme/search.png)
 
 </details>
 <details><summary>Categories</summary>
 Users are able to filter posts by their category that was chosen when the post was created. This enables the user to find the content that they are most interested in.
 
+This targets the following user story:
+
+- [As a user I can filter and search for posts that have the related category I want to read about](https://github.com/jrdnbrkfld/devlocker/issues/31)
+
 ![Categories](docs/readme/categories.png)
 
 </details>
 <details><summary>Create, edit and delete posts</summary>
-Users are able to create their own posts including an image, title, content and category. If changes need to be made they also have the ability to edit all fields for the post. Deletion is also enabled.
+Users are able to create their own posts including an image, title, content and category.
 
-This targets the following user stories:
+This targets the following user story:
 
-- [As a logged in user I can create posts so that I can share my images with the world](https://github.com/jrdnbrkfld/devlocker/issues/9)
+- [As a logged in user I can create posts so that I can share my ideas with the world](https://github.com/jrdnbrkfld/devlocker/issues/9)
 
 ![Create post](docs/readme/create-post.png)
+
+If changes need to be made they also have the ability to edit all fields for the post. Deletion is also enabled.
+
+This targets the following user story:
+
+- [As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created](https://github.com/jrdnbrkfld/devlocker/issues/18)
+
 ![Update or delete post](docs/readme/create-update-delete.png)
 
 </details>
 <details><summary>Create, edit and delete comments</summary>
-Users are able to create their own comments on posts. If changes need to be made they also have the ability to edit the comment, or delete it.
+Users are able to create their own comments on posts.
+
+This targets the following user stories:
+
+- [As a logged in user I can add comments to a post so that I can share my thoughts about the post](https://github.com/jrdnbrkfld/devlocker/issues/19)
+- [As a user I can see how long ago a comment was made so that I know how old a comment is](https://github.com/jrdnbrkfld/devlocker/issues/20)
+- [As a user I can read comments on posts so that I can read what other users think about the posts](https://github.com/jrdnbrkfld/devlocker/issues/21)
 
 ![Create comment](docs/readme/comment.png)
+
+If changes need to be made they also have the ability to edit the comment, or delete it.
+
+This targets the following user stories:
+
+- [As an owner of a comment I can delete my comment so that I can control removal of my comment from the application](https://github.com/jrdnbrkfld/devlocker/issues/22)
+- [As an owner of a comment I can edit my comment so that I can fix or update my existing comment](https://github.com/jrdnbrkfld/devlocker/issues/23)
+
 ![Update or delete comment](docs/readme/comment-update-delete.png)
 
 </details>
+
+<details><summary>Likes</summary>
+Users are able to like posts that they enjoy. This directly affects the 'Liked' section of the website, which shows only the posts that the user has liked previously.
+
+This targets the following user stories:
+
+- [As a logged in user I can like a post so that I can show my support for the posts that interest me](https://github.com/jrdnbrkfld/devlocker/issues/11)
+- [As a logged in user I can view the posts I liked so that I can find the posts I enjoy the most](https://github.com/jrdnbrkfld/devlocker/issues/14)
+
+![Likes](docs/readme/likes.png)
+
+</details>
+
+<details><summary>Feed</summary>
+With the addition of being able to follow users, when the 'Feed' section of the website is visited it will show posts from the authors the user has followed.
+
+This targets the following user stories:
+
+- [As a logged in user I can view content filtered by users I follow so that I can keep up to date with what they are posting about](https://github.com/jrdnbrkfld/devlocker/issues/15)
+- [As a user I can view all the posts by a specific user so that I can catch up on their latest posts, or decide I want to follow them](https://github.com/jrdnbrkfld/devlocker/issues/28)
+- [As a logged in user I can follow and unfollow other users so that I can see and remove posts by specific users in my posts feed](https://github.com/jrdnbrkfld/devlocker/issues/27)
+
+</details>
+
+<details><summary>Infinite Scroll</summary>
+To aid with the user experience an infinite scroll component was used instead of the standard pagination.
+
+This targets the following user story:
+
+- [As a user I can keep scrolling through the images on the site, that are loaded for me automatically so that I don't have to click on "next page" etc](https://github.com/jrdnbrkfld/devlocker/issues/16)
+
+</details>
+
 <details><summary>Profile</summary>
 When users visit this section they can view their personal statistics:
 
@@ -171,9 +244,11 @@ When users visit this section they can view their personal statistics:
 - How many people they follow
 - A small bio section where users can enter a quick description of themselves.
 
-This targets the following user story:
+This targets the following user stories:
 
 - [As a user I can view user's avatars so that I can easily identify users of the application](https://github.com/jrdnbrkfld/devlocker/issues/8)
+- [As a user I can view other users profiles so that I can see their posts and learn more about them](https://github.com/jrdnbrkfld/devlocker/issues/24)
+- [As a user I can view statistics about a specific user: bio, number of posts, follows and users followed so that I can learn more about them](https://github.com/jrdnbrkfld/devlocker/issues/26)
 
 ![Profile](docs/readme/profile.png)
 
@@ -182,6 +257,11 @@ Clicking the 3 dots creates a dropdown menu with the options to:
 - Edit profile
 - Change username
 - Change password
+
+This targets the following user stories:
+
+- [As a logged in user I can edit my profile so that I can change my profile picture and bio](https://github.com/jrdnbrkfld/devlocker/issues/29)
+- [As a logged in user I can update my username and password so that I can change my display name and keep my profile secure](https://github.com/jrdnbrkfld/devlocker/issues/30)
 
 ![Profile edit](docs/readme/profile-edit.png)
 
