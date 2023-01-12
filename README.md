@@ -280,16 +280,20 @@ A list of ideas that I would like to implement in the future are as follow:
 
 # Technologies
 
-## Languages used
-
-- HTML
-- CSS
-- JavaScript
-- React.js
-
-## Libraries, frameworks and dependencies
-
-## Tools
+- [HTML](https://html.spec.whatwg.org/multipage/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [JavaScript](https://www.javascript.com/)
+- [React.js](https://reactjs.org/)
+- [Axios](https://axios-http.com/docs/intro)
+- [React-Bootstrap](https://react-bootstrap-v4.netlify.app/)
+- [Heroku](https://dashboard.heroku.com/) - the site used to deploy the project.
+- [GitHub](https://github.com/) - the hosting site I used to store the code for the website.
+- [GitPod](https://gitpod.io/) - the Integrated Development Environment used to develop the website in a browser.
+- [Font Awesome](https://fontawesome.com/) - icons are used for all of the icons located throughout the website.
+- [Google Fonts](https://fonts.google.com/) - are used in the project to import the **Alexandria** font.
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - the built in developer tools in Google Chrome are used to test CSS styles, inspect page elements, React components and help with debugging problems with the layout of the website.
+- [Stack Overflow](https://stackoverflow.com/) - Stack Overflow was the primary source for help regarding issues.
+- [W3 Schools](https://www.w3schools.com/) - W3 Schools was one of the websites used for resolving issues with code.
 
 # Testing
 
