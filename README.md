@@ -57,14 +57,40 @@ All of the user stories are shown below. If you would like to inspect them furth
 
 <details><summary>Home</summary>
 
-The first thing users are greeted to is the Home Page. This is where you will find everything to navigate the website.
+The first thing users are greeted to is the Home Page. This is where you will find everything to navigate the website and decide wether or not you would like to take part and create an account.
+
+Desktop view:
 
 ![Home page](docs/readme/home-page.png)
+
+Mobile view:
+
+![Home page mobile](docs/readme/home-page-mobile.png)
 
 </details>
 <details><summary>Navbar</summary>
 Featured at the top of all pages is the navbar, holding the DevLocker logo and the links to the Sign in and Sign up page while logged out.
-If the user is logged in they can navigate to the Create, Feed, Liked, Sign out and Profile pages.
+If the user is logged in they can navigate to the Create, Feed, Liked, Sign out and Profile pages. On smaller screen sizes this turns into a toggler button.
+
+This targets the following user stories:
+
+- [As a user I can view a navbar from every page so that I can navigate easily between pages](https://github.com/jrdnbrkfld/devlocker/issues/1)
+- [As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh](https://github.com/jrdnbrkfld/devlocker/issues/2)
+- [Authentication - Logged in Status: As a user I can tell if I am logged in or not so that I can log in if I need to](https://github.com/jrdnbrkfld/devlocker/issues/5)
+- [Conditional rendering - As a logged out user I can see sign in and sign up options so that I can sign in/sign up](https://github.com/jrdnbrkfld/devlocker/issues/7)
+
+Desktop view:
+
+![Desktop view](docs/readme/navbar.png)
+
+Mobile view:
+
+![Mobile view](docs/readme/navbar-mobile.png)
+
+Toggled view:
+
+![Toggled view](docs/readme/navbar-toggle.png)
+
 </details>
 <details><summary>Sign up</summary>
 If the visitor likes the website, they are able to register an account. This enables the user to be able to create posts, like posts and comment on posts.</details>
