@@ -383,7 +383,18 @@ I tested that the website is responsive, functions well and looks good on all sc
 
 # Validation
 
-## HTML
+<details><summary>HTML</summary>
+
+Returned with no errors. However it did throw the following:
+
+`Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.`
+
+This is due to React, which was completely unavoidable.
+
+![manual testing](docs/validation/html-validation.png)
+
+
+</details>
 
 ## CSS
 
