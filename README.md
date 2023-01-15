@@ -116,6 +116,18 @@ Mobile:
 
 </details>
 
+<details><summary>Profile</summary>
+
+Desktop:
+
+![profile desktop](docs/wireframes/profile.png)
+
+Mobile:
+
+![profile mobile](docs/wireframes/profile-mobile.png)
+
+</details>
+
 ## Features
 
 <details><summary>Home</summary>
