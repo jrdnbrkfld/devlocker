@@ -80,6 +80,30 @@ Home page mobile:
 
 </details>
 
+<details><summary>Sign Up</summary>
+
+Desktop:
+
+![sign up desktop](docs/wireframes/signup.png)
+
+Mobile:
+
+![sign up mobile](docs/wireframes/signup-mobile.png)
+
+</details>
+
+<details><summary>Sign In</summary>
+
+Desktop:
+
+![sign in desktop](docs/wireframes/signin.png)
+
+Mobile:
+
+![sign in desktop](docs/wireframes/signin-mobile.png)
+
+</details>
+
 ## Features
 
 <details><summary>Home</summary>
