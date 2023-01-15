@@ -104,6 +104,18 @@ Mobile:
 
 </details>
 
+<details><summary>Create</summary>
+
+Desktop:
+
+![create post desktop](docs/wireframes/create.png)
+
+Mobile:
+
+![create post mobile](docs/wireframes/create-mobile.png)
+
+</details>
+
 ## Features
 
 <details><summary>Home</summary>
