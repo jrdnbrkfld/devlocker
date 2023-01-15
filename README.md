@@ -62,7 +62,23 @@ I used the [Alexandria](https://fonts.google.com/specimen/Alexandria?query=alexa
 
 </details>
 
-<details><summary>Wireframes</summary></details>
+## Wireframes
+
+<details><summary>Home Page</summary>
+
+Home page signed in:
+
+![Home page authorised](docs/wireframes/home-page-authorized.png)
+
+Home page signed out:
+
+![home page unauthorised](docs/wireframes/home-page-unauthorized.png)
+
+Home page mobile:
+
+![home page mobile](docs/wireframes/home-page-mobile.png)
+
+</details>
 
 ## Features
 
