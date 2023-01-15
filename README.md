@@ -4,6 +4,8 @@
 
 [Live link](https://devlocker.herokuapp.com/)
 
+[API repository](https://github.com/jrdnbrkfld/api)
+
 ## Table of Contents
 
 - [Purpose](#purpose)
@@ -34,6 +36,8 @@ Users of this website are able to:
 - Filter posts by category
 
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
+
+##### Back to [top](#table-of-contents)
 
 # User Experience
 
@@ -342,6 +346,8 @@ A list of ideas that I would like to implement in the future are as follow:
 - Ability to reply to comments
 - Option to like/unlike comments
 
+##### Back to [top](#table-of-contents)
+
 # Technologies
 
 - [HTML](https://html.spec.whatwg.org/multipage/)
@@ -359,11 +365,21 @@ A list of ideas that I would like to implement in the future are as follow:
 - [Stack Overflow](https://stackoverflow.com/) - Stack Overflow was the primary source for help regarding issues.
 - [W3 Schools](https://www.w3schools.com/) - W3 Schools was one of the websites used for resolving issues with code.
 
+##### Back to [top](#table-of-contents)
+
 # Testing
 
 ## Manual testing
 
-# Bugs
+I tested that the website is responsive, functions well and looks good on all screen sizes using Google Dev Tools and Responsive Design Checker.
+
+<details><summary>Google Sheets</summary>
+
+![manual testing](docs/tests/manual-testing.png)
+
+</details>
+
+##### Back to [top](#table-of-contents)
 
 # Validation
 
@@ -376,6 +392,8 @@ A list of ideas that I would like to implement in the future are as follow:
 ## Wave
 
 ## Lighthouse
+
+##### Back to [top](#table-of-contents)
 
 # Config
 
@@ -399,5 +417,7 @@ $ git clone https://github.com/aleksandracodes/ci_pp5_snapfood.git
 ```
 
 7. Press Enter to create your local clone
+
+##### Back to [top](#table-of-contents)
 
 # Credits
