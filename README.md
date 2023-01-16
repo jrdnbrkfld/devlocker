@@ -393,7 +393,6 @@ This is due to React, which was completely unavoidable.
 
 ![manual testing html](docs/validation/html-validation.png)
 
-
 </details>
 
 <details><summary>CSS</summary>
@@ -406,9 +405,21 @@ Returned with no errors.
 
 ## JSX
 
+The JSX code was validated using the default [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension throughout development.
+
 ## Wave
 
-## Lighthouse
+<details><summary>Lighthouse</summary>
+
+Home page desktop:
+
+![manual testing css](docs/lighthouse/home.png)
+
+Home page mobile:
+
+![manual testing css](docs/lighthouse/home-mobile.png)
+
+</details>
 
 ##### Back to [top](#table-of-contents)
 
