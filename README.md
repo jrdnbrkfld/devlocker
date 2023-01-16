@@ -391,12 +391,18 @@ Returned with no errors. However it did throw the following:
 
 This is due to React, which was completely unavoidable.
 
-![manual testing](docs/validation/html-validation.png)
+![manual testing html](docs/validation/html-validation.png)
 
 
 </details>
 
-## CSS
+<details><summary>CSS</summary>
+
+Returned with no errors.
+
+![manual testing css](docs/validation/css-validation.png)
+
+</details>
 
 ## JSX
 
