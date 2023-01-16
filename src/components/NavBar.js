@@ -127,12 +127,6 @@ const NavBar = () => {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto mt-1 text-left">
-            <NavLink
-              exact
-              className={`${styles.NavLink} ${styles.Toggler}`}
-              activeClassName={styles.Active}
-              to="/"
-            ></NavLink>
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>
