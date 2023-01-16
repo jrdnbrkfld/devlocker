@@ -403,11 +403,19 @@ Returned with no errors.
 
 </details>
 
-## JSX
+<details><summary>JSX</summary>
 
 The JSX code was validated using the default [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension throughout development.
 
-## Wave
+</details>
+
+<details><summary>Wave</summary>
+
+The WAVE accessibility evaluation tool was used on the website, including all of the pages. The results were the same across the entire website.
+
+![wave validation](docs/validation/wave.png)
+
+</details>
 
 <details><summary>Lighthouse</summary>
 
