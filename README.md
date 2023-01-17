@@ -421,11 +421,27 @@ The WAVE accessibility evaluation tool was used on the website, including all of
 
 Home page desktop:
 
-![manual testing css](docs/lighthouse/home.png)
+![home page lighthouse results](docs/lighthouse/home.png)
 
 Home page mobile:
 
-![manual testing css](docs/lighthouse/home-mobile.png)
+![home page lighthouse results mobile](docs/lighthouse/home-mobile.png)
+
+Profile page desktop:
+
+![profile page lighthouse results](docs/lighthouse/profile.png)
+
+Profile page mobile:
+
+![profile page lighthouse results mobile](docs/lighthouse/profile-mobile.png)
+
+Post page desktop:
+
+![Post page lighthouse results](docs/lighthouse/post-page.png)
+
+Post page mobile:
+
+![Post page lighthouse results mobile](docs/lighthouse/post-page-mobile.png)
 
 </details>
 
