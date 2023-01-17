@@ -350,12 +350,12 @@ A list of ideas that I would like to implement in the future are as follow:
 
 # Technologies
 
-- [HTML](https://html.spec.whatwg.org/multipage/)
-- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
-- [JavaScript](https://www.javascript.com/)
-- [React.js](https://reactjs.org/)
-- [Axios](https://axios-http.com/docs/intro)
-- [React-Bootstrap](https://react-bootstrap-v4.netlify.app/)
+- [HTML](https://html.spec.whatwg.org/multipage/) - the standard markup language for documents to be displayed in a web browser.
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - used for describing the presentation of the page in a markup language.
+- [JavaScript](https://www.javascript.com/) - one of the core technologies of the World Wide Web.
+- [React.js](https://reactjs.org/) - a JavaScript library for building user interfaces with reusable components.
+- [Axios](https://axios-http.com/docs/intro) - used to communicate with the backend server.
+- [React-Bootstrap](https://react-bootstrap-v4.netlify.app/) - integrates Bootstrap styles to function with React. 
 - [Heroku](https://dashboard.heroku.com/) - the site used to deploy the project.
 - [GitHub](https://github.com/) - the hosting site I used to store the code for the website.
 - [GitPod](https://gitpod.io/) - the Integrated Development Environment used to develop the website in a browser.
@@ -464,12 +464,14 @@ Post page mobile:
 5. Change the current working directory to the one where you want the cloned directory
 6. Type git clone and paste the URL from the clipboard
 
-```
-$ git clone https://github.com/aleksandracodes/ci_pp5_snapfood.git
-```
+`$ git clone https://github.com/jrdnbrkfld/devlocker.git`
 
 7. Press Enter to create your local clone
 
 ##### Back to [top](#table-of-contents)
 
 # Credits
+
+The base code and theme of the application is influenced by Code Institute's walkthrough project "Moments", which was a great learning experience. 
+
+I'd also like to thank my cohorts in the Code Institute Slack community, and the Tutor Assistance for all their help with code issues.
