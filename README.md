@@ -11,6 +11,7 @@
 - [Purpose](#purpose)
 - [UX](#user-experience)
 - [Features](#features)
+- [Components](#react-components)
 - [Technologies](#technologies)
 - [Testing](#testing)
 - [Bugs](#bugs)
@@ -337,6 +338,34 @@ This targets the following user stories:
 
 </details>
 
+## React Components
+
+Several components were setup throughout the project to be reused all around the site, these being:
+
+`<Asset />`
+
+- Created to implement a loading spinner to be used throughout the site
+
+`<MoreDropdown />`
+
+- Adds a dropdown menu to aid the user in editing or deleting a post or comment, or edit their own profile
+
+`<NavBar />`
+
+- Self explanatory. Shows all the necessary links to help the user to navigate the site
+
+`<NotFound />`
+
+- A component showing an error message when the user tries to access an invalid or unauthorised page
+
+`<ProfilePhoto />`
+
+- Used for the users avatar throughout the site
+
+`<PopularProfiles />`
+
+- Shows the user a collection of the most popular profiles on the site, which changes when viewed on desktop or mobile
+
 ## Future Features
 
 A list of ideas that I would like to implement in the future are as follow:
@@ -355,7 +384,7 @@ A list of ideas that I would like to implement in the future are as follow:
 - [JavaScript](https://www.javascript.com/) - one of the core technologies of the World Wide Web.
 - [React.js](https://reactjs.org/) - a JavaScript library for building user interfaces with reusable components.
 - [Axios](https://axios-http.com/docs/intro) - used to communicate with the backend server.
-- [React-Bootstrap](https://react-bootstrap-v4.netlify.app/) - integrates Bootstrap styles to function with React. 
+- [React-Bootstrap](https://react-bootstrap-v4.netlify.app/) - integrates Bootstrap styles to function with React.
 - [Heroku](https://dashboard.heroku.com/) - the site used to deploy the project.
 - [GitHub](https://github.com/) - the hosting site I used to store the code for the website.
 - [GitPod](https://gitpod.io/) - the Integrated Development Environment used to develop the website in a browser.
@@ -488,6 +517,6 @@ This application has been deployed from Github using Heroku. Here's how:
 
 # Credits
 
-The base code and theme of the application is influenced by Code Institute's walkthrough project "Moments", which was a great learning experience. 
+The base code and theme of the application is influenced by Code Institute's walkthrough project "Moments", which was a great learning experience.
 
 I'd also like to thank my cohorts in the Code Institute Slack community, and the Tutor Assistance for all their help with code issues.
