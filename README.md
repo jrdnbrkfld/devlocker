@@ -468,6 +468,22 @@ Post page mobile:
 
 7. Press Enter to create your local clone
 
+### Heroku
+
+This application has been deployed from Github using Heroku. Here's how:
+
+1. Create an account at [heroku.com](https://www.heroku.com/)
+2. Create a new app, add app name and your region
+3. Click on create app
+4. Go to "Settings"
+5. Under Config Vars, add your sensitive data (creds.json for example)
+6. For this project, I set buildpacks to <Python> and <NodeJS> in that order.
+7. Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+8. Enter your repository name and click on it when it shows below
+9. Choose the branch you want to buid your app from
+10. If desired, click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
+11. All done!
+
 ##### Back to [top](#table-of-contents)
 
 # Credits
